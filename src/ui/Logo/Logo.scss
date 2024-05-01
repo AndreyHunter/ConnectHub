@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    a {
+        font-weight: 500;
+        font-size: 2.2rem;
+        color: white;
+    }
+}
+
+.logo-image {
+    max-width: 80px;
+}
