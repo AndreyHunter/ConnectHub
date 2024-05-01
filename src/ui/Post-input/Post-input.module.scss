@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    background-color: rgb(109, 108, 107);
+}
+
+.input {
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    &::placeholder {
+        font-size: 1rem;
+        color: white;
+    }
+}

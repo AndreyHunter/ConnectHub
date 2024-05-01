@@ -1,9 +1,9 @@
 import Logo from '../../ui/Logo/Logo'
-import './Header.scss'
+import styles from './Header.module.scss'
 
 const Header = () => {
     return (
-        <header className='header'>
+        <header className={styles.header}>
             <Logo/>
         </header>
     )

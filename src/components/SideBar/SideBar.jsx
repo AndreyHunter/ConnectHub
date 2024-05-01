@@ -1,25 +1,27 @@
-import './SideBar.scss'
+import styles from './SideBar.module.scss'
 
 const SideBar = () => {
     return (
-        <aside className="sidebar">
-            <nav className="sidebar__nav">
-                <ul className="sidebar__list">
-                    <li className="sidebar__item">
-                        <a href="#!" className="sidebar__link">Profile</a>
+        <aside className={styles.sidebar}>
+            <nav className={styles.nav}>
+                <ul className={styles.list}>
+                    <li>
+                        <a href="#!" className={styles.link}>Profile</a>
                     </li>
-                    <li className="sidebar__item">
-                        <a href="#!" className="sidebar__link">Messages</a>
+                    <li>
+                        <a href="#!" className={styles.link}>Messages</a>
                     </li>
-                    <li className="sidebar__item">
-                        <a href="#!" className="sidebar__link">News</a>
+                    <li>
+                        <a href="#!" className={styles.link}>News</a>
                     </li>
-                    <li className="sidebar__item">
-                        <a href="#!" className="sidebar__link">Music</a>
+                    <li>
+                        <a href="#!" className={styles.link}>Music</a>
                     </li>
                 </ul>
 
-                <a href="#!" className="sidebar__link">Settings</a>
+                <div>
+                    <a href="#!" className={styles.link}>Settings</a>
+                </div>
             </nav>
         </aside>
     )

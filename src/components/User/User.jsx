@@ -1,21 +1,20 @@
 import UserLogo from '../../ui/User-logo/User-logo'
-import './User.scss'
-
-const userImage = 'https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg'
+import logoImage from './../../assets/images/user-image.jpg'
+import styles from './User.module.scss'
 
 const User = () => {
     return (
-        <div className='user'>
-            <UserLogo image={userImage}/>
-            <div className="user-info">
-                <a href='#!' className="user-info__title">
+        <div className={styles.user}>
+            <UserLogo image={logoImage}/>
+            <div>
+                <a href='#!' className={styles.title}>
                     Dmitry K.
                 </a>
-                <ul className="user-info__list">
-                    <li className="user-info__item">Date of Birth: 2 january</li>
-                    <li className="user-info__item">City: Minsk</li>
-                    <li className="user-info__item">Education: BSU'11</li>
-                    <li className="user-info__item">Web Site: https://it-kamasutra.com</li>
+                <ul className={styles.list}>
+                    <li>Date of Birth: 2 january</li>
+                    <li>City: Minsk</li>
+                    <li>Education: BSU'11</li>
+                    <li>Web Site: https://it-kamasutra.com</li>
                 </ul>
             </div>
         </div>

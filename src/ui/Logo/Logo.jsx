@@ -1,13 +1,13 @@
 import logo from './../../assets/images/logo.svg'
-import './Logo.scss'
+import styles from './Logo.module.scss'
 
 const Logo = () => {
     return (
-        <div className="logo">
+        <div className={styles.logo}>
             <img 
                 src={logo} 
                 alt="logo"
-                className="logo-image"
+                className={styles.image}
             />
             <a href="#!">
                 ConnectHub

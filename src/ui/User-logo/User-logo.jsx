@@ -1,10 +1,10 @@
-import './User-logo.scss'
+import styles from './User-logo.module.scss'
 
 const UserLogo = ({image}) => {
     return (
-        <div className="user-logo">
-            <a href="#!" className="user-logo__link">
-                <img src={image} alt="user-logo" className='user-logo__image'/>
+        <div className={styles.logo}>
+            <a href="#!">
+                <img src={image} alt="user-logo" className={styles.img}/>
             </a>
         </div>
     )

@@ -1,0 +1,10 @@
+.btn {
+    width: 140px;
+    min-height: 40px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    transition: .1s ease;
+    &:active {
+        outline: 2px solid rgb(255, 255, 255);
+    }
+}
