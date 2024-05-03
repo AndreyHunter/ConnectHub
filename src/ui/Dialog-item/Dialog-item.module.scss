@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.1s ease;
+    &:hover {
+        color: rgb(241, 153, 10);
+    }
+}
+
+.message {
+    font-size: 0.9rem;
+}

@@ -1,30 +1,55 @@
+import { NavLink } from 'react-router-dom'
+
 import styles from './SideBar.module.scss'
 
-const SideBar = () => {
+const SideBar = () =>  {
+    const clazz = ({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link
+
     return (
         <aside className={styles.sidebar}>
             <nav className={styles.nav}>
                 <ul className={styles.list}>
                     <li>
-                        <a href="#!" className={styles.link}>Profile</a>
+                        <NavLink
+                            to='/profile' 
+                            className={clazz}>
+                            Profile
+                        </NavLink> 
+                    </li> 
+                    <li>
+                        <NavLink 
+                            to='/messages' 
+                            className={clazz}>
+                            Messages
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#!" className={styles.link}>Messages</a>
+                        <NavLink
+                            to='/news' 
+                            className={clazz}>
+                            News
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#!" className={styles.link}>News</a>
-                    </li>
-                    <li>
-                        <a href="#!" className={styles.link}>Music</a>
+                        <NavLink
+                            to='/music' 
+                            className={clazz}>
+                            Music
+                        </NavLink>
                     </li>
                 </ul>
 
                 <div>
-                    <a href="#!" className={styles.link}>Settings</a>
+                    <NavLink
+                        to='/settings' 
+                        className={clazz}>
+                        Settings
+                    </NavLink>
                 </div>
             </nav>
         </aside>
     )
+   
 }
 
 export default SideBar

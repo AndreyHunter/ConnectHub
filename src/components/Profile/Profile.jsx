@@ -1,16 +1,21 @@
-import MyPosts from './../My-Posts/My-posts'
+import MyPosts from '../My-Posts/My-Posts'
 import User from './../User/User'
 import styles from './Profile.module.scss'
 
-const Profile = () => {
+const ProfileTopImage = () => {
+    return (
+        <div className={styles.image}>
+            <img src="https://images.wallpaperscraft.ru/image/single/most_noch_tuman_123534_2560x1440.jpg" alt="" />
+        </div>
+    )
+} 
+
+const Profile = ({posts}) => {
     return (
         <div className={styles.profile}>
-            <div className={styles.image}>
-                <img src="https://images.wallpaperscraft.ru/image/single/most_noch_tuman_123534_2560x1440.jpg" alt="" />
-            </div>
-
+            <ProfileTopImage/>
             <User/>
-            <MyPosts/>
+            <MyPosts posts={posts}/>
         </div>
     )
 }

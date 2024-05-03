@@ -6,7 +6,9 @@ const PostsForm = () => {
     return (
         <form className={styles.form}>
             <PostInput/>
-            <div className={styles.btn_wraper}><PostButton/></div>
+            <div className={styles.wraper}>
+                <PostButton/>
+            </div>
         </form>
     )
 }

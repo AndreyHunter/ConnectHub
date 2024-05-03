@@ -1,0 +1,39 @@
+.tooltip {
+    background-color: rgb(94, 94, 94);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.desc {
+    font-size: 1rem;
+}
+
+.more {
+    width: 60px;
+    min-height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.answer {
+    background-color: rgb(47, 46, 46);
+    padding: 10px;
+    border-radius: 8px;
+    top: 20px;
+    left: 80px;
+    position: absolute;
+}
+

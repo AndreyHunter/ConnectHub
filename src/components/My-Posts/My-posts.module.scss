@@ -6,3 +6,9 @@
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

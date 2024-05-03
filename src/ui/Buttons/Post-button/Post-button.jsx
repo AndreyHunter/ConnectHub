@@ -7,7 +7,7 @@ const PostButton = () => {
             type='button'
             className={`btn ${styles.btn}`}
         >
-            Добавить пост
+            Add post
         </button>
     )
 }

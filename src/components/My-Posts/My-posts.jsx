@@ -1,10 +1,9 @@
-import PostsForm from './../Posts-form/Posts-form'
-import PostItem from './../../ui/Post-item/Post-item'
-import logoImage from './../../assets/images/user-image.jpg'
+import PostItem from '../../ui/Post-item/Post-item'
+import PostsForm from '../Posts-form/Posts-form'
 
-import styles from './My-posts.module.scss'
+import styles from './My-Posts.module.scss'
 
-const MyPosts = () => {
+const MyPosts = ({posts}) => {
     return (
         <div className={styles.posts}>
             <div className={styles.title}>
@@ -14,10 +13,14 @@ const MyPosts = () => {
             <PostsForm/>
             
             <ul className={styles.list}>
-                <PostItem 
-                    image={logoImage}
-                    text='Hey, why nobody love me?'
-                />
+                {posts.map((post) => (
+                      <PostItem
+                      key={post.id}
+                      text={post.text}
+                      image={post.image}
+                      likes={post.likes}
+                  />
+                ))}
             </ul>
         </div>
     )

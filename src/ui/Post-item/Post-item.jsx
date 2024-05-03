@@ -1,14 +1,22 @@
+import Like from './../../ui/Like/Like'
+
 import styles from './Post-item.module.scss'
 
-const PostItem = ({text, image}) => {
+const PostItem = ({text, image, likes}) => {
     return (
-        <div className={styles.item}>
-            <img 
-                className={styles.image}
-                src={image} 
-                alt="postImage" />
-            {text}
-        </div>
+        <li>
+            <div className={styles.item}>
+                <img 
+                    className={styles.image}
+                    src={image} 
+                    alt="postImage" />
+                {text}
+            </div>
+            <div className={styles.actions_info}>
+                <div>Лайков: {likes}</div>
+                <Like/>
+            </div>
+        </li>
     )
 }
 
