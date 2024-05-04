@@ -1,8 +1,9 @@
+import FriendsWidjet from './../Friends-widjet/Friends-widjet'
 import { NavLink } from 'react-router-dom'
 
 import styles from './SideBar.module.scss'
 
-const SideBar = () =>  {
+const SideBar = ({friends}) =>  {
     const clazz = ({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link
 
     return (
@@ -47,6 +48,13 @@ const SideBar = () =>  {
                     </NavLink>
                 </div>
             </nav>
+
+            <section className={styles.friends}>
+                <NavLink to='/friends'>
+                    <span>Friends: {friends.length}</span>
+                </NavLink>
+                <FriendsWidjet friends={friends}/>
+            </section>
         </aside>
     )
    

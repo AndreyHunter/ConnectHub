@@ -30,3 +30,16 @@
     color: rgb(255, 157, 0);
 }
 
+.friends {
+    padding-top: 40px;
+    span {
+        display: inline-block;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 8px;
+        transition: .1s ease;
+        &:hover {
+            color: rgb(255, 157, 0);
+        }
+    }
+}

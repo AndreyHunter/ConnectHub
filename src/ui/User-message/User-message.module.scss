@@ -1,0 +1,37 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    img {
+        object-fit: contain;
+        border-radius: 50%;
+    }
+}
+
+.message {
+    padding: 10px;
+    background-color: rgb(45, 44, 44);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    svg {
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        path {
+            fill: rgb(45, 44, 44);
+        }
+    }
+
+}
+

@@ -15,7 +15,7 @@ const App = ({state}) => {
                 <Header/>
 
                 <div className="app-layout">
-                    <SideBar/>
+                    <SideBar friends={state.friends}/>
                     <Routes>
                         <Route path="/" element={<Profile state={state.profilePage}/>} />
                         <Route path="/profile" element={<Profile state={state.profilePage} />} />

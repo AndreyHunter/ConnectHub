@@ -1,0 +1,14 @@
+.friend a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    img {
+        width: 30px;
+        border-radius: 50%;
+    }
+}
