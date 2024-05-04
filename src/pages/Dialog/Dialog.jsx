@@ -1,12 +1,13 @@
-import DialogItem from '../../ui/Dialog-item/Dialog-item.jsx'
+import DialogItem from '../../ui/Dialog-item/Dialog-item'
+import Message from '../../ui/Message/Message'
 
 import styles from './Dialog.module.scss'
 
-const Dialog = ({data}) => {
+const Dialog = ({state}) => {
     return (
         <div className={styles.wrapper}>
             <ul className={styles.dialog_list}>
-                {data.map(user => (
+                {state.users.map(user => (
                     <DialogItem
                         key={user.id}
                         id={user.id}
@@ -16,9 +17,14 @@ const Dialog = ({data}) => {
                     />
                 ))}
             </ul>
-            <div className={styles.dialog_messages}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quo tempora nesciunt cum quae nobis, aut odit nisi quam quas quidem repudiandae dolor dolore cumque libero expedita eveniet quisquam fuga.
-            </div>
+            <ul className={styles.dialog_messages}>
+                {state.messages.map(message => (
+                    <Message 
+                        key={message.id}
+                        message={message.message}
+                    />
+                ))}
+            </ul>
         </div>
     )
 }

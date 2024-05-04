@@ -1,4 +1,4 @@
-import UserLogo from '../../ui/User-logo/User-logo'
+import UserLogo from './../../ui/User-logo/User-logo'
 import logoImage from './../../assets/images/user-image.jpg'
 import styles from './User.module.scss'
 

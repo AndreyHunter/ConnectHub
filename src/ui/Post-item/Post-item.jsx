@@ -1,20 +1,27 @@
-import Like from './../../ui/Like/Like'
+import Like from './../Like/Like'
+import SharedButton from './../Buttons/Shared-button/Shared-button'
 
 import styles from './Post-item.module.scss'
 
-const PostItem = ({text, image, likes}) => {
+const PostItem = ({message, image, likes, reposts}) => {
     return (
-        <li>
-            <div className={styles.item}>
+        <li className={styles.item}>
+            <div className={styles.post}>
                 <img 
                     className={styles.image}
                     src={image} 
                     alt="postImage" />
-                {text}
+                {message}
             </div>
             <div className={styles.actions_info}>
-                <div>Лайков: {likes}</div>
-                <Like/>
+                <div className={styles.actions_count}>
+                    <div>Лайков: {likes}</div>
+                    <div>Поделились: {reposts}</div>
+                </div>
+                <div className={styles.actions}>
+                    <Like/>
+                    <SharedButton/>
+                </div>
             </div>
         </li>
     )
