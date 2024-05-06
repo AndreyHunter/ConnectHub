@@ -1,10 +1,11 @@
 import './../buttons.scss'
 import styles from './Post-button.module.scss'
 
-const PostButton = () => {
+const PostButton = ({onClick}) => {
     return (
-        <button 
-            type='button'
+        <button
+            onClick={onClick}
+            type='submit'
             className={`btn ${styles.btn}`}
         >
             Add post

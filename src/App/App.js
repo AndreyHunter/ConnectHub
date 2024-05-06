@@ -4,11 +4,11 @@ import Header from './../components/Header/Header'
 import SideBar from './../components/SideBar/SideBar'
 
 import Profile from './../pages/Profile/Profile'
-import Dialog from './../pages/Dialog/Dialog' 
+import Chat from './../pages/Chat/Chat'
 
 import './App.scss'
 
-const App = ({state}) => {
+const App = ({state, addPost, addMessage}) => {
     return (
         <Router>
             <div className='app'>
@@ -17,9 +17,9 @@ const App = ({state}) => {
                 <div className="app-layout">
                     <SideBar friends={state.friends}/>
                     <Routes>
-                        <Route path="/" element={<Profile state={state.profilePage}/>} />
-                        <Route path="/profile" element={<Profile state={state.profilePage} />} />
-                        <Route path="/messages/*" element={<Dialog state={state.messagesPage}/>} />
+                        <Route path="/" element={<Profile state={state.profilePage} addPost={addPost}/>} />
+                        <Route path="/profile" element={<Profile state={state.profilePage} addPost={addPost} />} />
+                        <Route path="/messages/*" element={<Chat state={state.messagesPage} addMessage={addMessage}/>} />
                     </Routes>
                 </div>
             </div>

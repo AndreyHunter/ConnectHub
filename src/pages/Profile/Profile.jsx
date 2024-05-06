@@ -5,12 +5,12 @@ import ProfileTopImage from './Profile-top-image/ProfileTopImage'
 import styles from './Profile.module.scss'
 
 
-const Profile = ({state}) => {
+const Profile = ({state, addPost}) => {
     return (
         <div className={styles.profile}>
             <ProfileTopImage/>
             <User/>
-            <MyPosts posts={state.posts}/>
+            <MyPosts posts={state.posts} addPost={addPost}/>
         </div>
     )
 }

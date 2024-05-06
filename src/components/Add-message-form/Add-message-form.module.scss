@@ -1,0 +1,29 @@
+.form {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(231, 228, 228);
+}
+
+.btn {
+    display: none;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.icon:nth-child(2) {
+    width: 17px;
+}

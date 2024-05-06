@@ -1,9 +1,10 @@
 import styles from './Post-input.module.scss'
 
-const PostInput = () => {
+const PostInput = ({reF}) => {
     return (
         <div className={styles.wrapper}>
-            <input 
+            <input
+            ref={reF}
             type="text" 
             className={styles.input}
             placeholder='your news...'

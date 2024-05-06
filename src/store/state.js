@@ -110,4 +110,25 @@ const state = {
     ]
 }
 
+export const addPost = (text, image) => {
+    const post = {
+        id: performance.now(),
+        message: text,
+        likes: 0,
+        image: image
+    }
+    state.profilePage.posts = [...state.profilePage.posts, post]
+    console.log(state.profilePage.posts)
+}
+
+export const addMessage = (text, file) => {
+    const message = {
+        id: performance.now(),
+        message: text,
+        file: file
+    }
+    state.messagesPage.messages.push(message)
+    console.log(state.messagesPage.messages)
+}
+
 export default state
