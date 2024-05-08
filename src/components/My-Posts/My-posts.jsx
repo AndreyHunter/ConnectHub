@@ -3,14 +3,14 @@ import PostsForm from './../Posts-form/Posts-form'
 
 import styles from './My-Posts.module.scss'
 
-const MyPosts = ({posts, addPost}) => {
+const MyPosts = ({posts, dispatch, postText}) => {
     return (
         <div className={styles.posts}>
             <div className={styles.title}>
                 My Posts
             </div>
 
-            <PostsForm addPost={addPost}/>
+            <PostsForm dispatch={dispatch} postText={postText}/>
 
             <div className={styles.list_wrapper}>
                 <ul className={styles.list}>
@@ -20,6 +20,7 @@ const MyPosts = ({posts, addPost}) => {
                             message={post.message}
                             image={post.image}
                             likes={post.likes}
+                            reposts={post.reposts}
                         />
                     ))}
                 </ul>

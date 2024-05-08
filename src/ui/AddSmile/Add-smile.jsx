@@ -40,7 +40,8 @@ const AddSmile = ({onSmileSelect}) => {
                         <span 
                             key={index} 
                             onClick={() => handleSmileSelect(smile)} 
-                            className={styles.smile}>{smile}
+                            className={styles.smile}>
+                            {smile}
                         </span>
                     ))}
                 </ul>

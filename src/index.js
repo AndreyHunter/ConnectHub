@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App/App'
-import state from './store/state'
-import {addPost, addMessage} from './store/state'
-
-
+import store from './store/store'
 
 import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App state={state} addPost={addPost} addMessage={addMessage}/>
-  </React.StrictMode>
-);
 
+const renderApp = () => {
+    root.render(
+        <Router>
+            <React.StrictMode>
+                <App state={store.getState()} dispatch={store.dispatch.bind(store)}/>
+            </React.StrictMode>
+        </Router>
+    );
+}
+
+
+store.subscribe(renderApp)
+renderApp()

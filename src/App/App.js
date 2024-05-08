@@ -1,29 +1,40 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import Header from './../components/Header/Header'
 import SideBar from './../components/SideBar/SideBar'
-
 import Profile from './../pages/Profile/Profile'
 import Chat from './../pages/Chat/Chat'
 
 import './App.scss'
 
-const App = ({state, addPost, addMessage}) => {
+const App = ({state, dispatch}) => {
     return (
-        <Router>
-            <div className='app'>
-                <Header/>
+        <div className='app'>
+            <Header/>
 
-                <div className="app-layout">
-                    <SideBar friends={state.friends}/>
-                    <Routes>
-                        <Route path="/" element={<Profile state={state.profilePage} addPost={addPost}/>} />
-                        <Route path="/profile" element={<Profile state={state.profilePage} addPost={addPost} />} />
-                        <Route path="/messages/*" element={<Chat state={state.messagesPage} addMessage={addMessage}/>} />
-                    </Routes>
-                </div>
+            <div className="app-layout">
+                <SideBar friends={state.friends}/>
+                <Routes>
+                    <Route path="/" element={
+                        <Profile 
+                            state={state.profilePage} 
+                            dispatch={dispatch}/>} 
+                        />
+                    <Route path="/profile" element={
+                        <Profile 
+                            state={state.profilePage} 
+                            dispatch={dispatch} />} 
+                        />
+                    <Route path="/messages/*" 
+                        element={
+                        <Chat 
+                            state={state.messagesPage}
+                            dispatch={dispatch} 
+                        />} 
+                    />
+                </Routes>
             </div>
-        </Router>
+        </div>
     )
 }
 

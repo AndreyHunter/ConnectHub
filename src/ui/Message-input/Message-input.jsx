@@ -1,9 +1,9 @@
 import styles from './Message-input.module.scss'
 
-const MessageInput = ({value, onChange})  => {
+const MessageInput = ({value, setMessage})  => {
     return (
         <input 
-            onChange={onChange}
+            onChange={(e) => setMessage(e.target.value)}
             value={value}
             type="text" 
             className={styles.input} 

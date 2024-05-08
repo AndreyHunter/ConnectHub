@@ -2,10 +2,10 @@ import DialogItem from '../../ui/Dialog-item/Dialog-item'
 
 import styles from './Messages.module.scss'
 
-const Messages = ({state}) => {
+const Messages = ({users}) => {
     return (
         <ul className={styles.dialog_list}>
-            {state.users.map(user => (
+            {users.map(user => (
                 <DialogItem
                     key={user.id}
                     id={user.id}

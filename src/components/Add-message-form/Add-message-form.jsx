@@ -1,31 +1,30 @@
 import React, { useState } from 'react'
+import { addMessageAction } from './../../store/Actions/messages-actions'
+
 import AddFileInput from '../../ui/Add-file-input/Add-file-input'
 import MessageInput from './../../ui/Message-input/Message-input'
-
-import styles from './Add-message-form.module.scss'
 import AddSmile from '../../ui/AddSmile/Add-smile'
 
-const AddMessageForm = ({addMessage}) => {
+import styles from './Add-message-form.module.scss'
+
+const AddMessageForm = ({dispatch}) => {
     const [message, setMessage] = useState('')
     const [file, setFile] = useState('')
 
     const handleAddMessage = (e) => {
         e.preventDefault()
-        addMessage(message, file)
+        if (!message) return
+        dispatch(addMessageAction(message, file))
         setMessage('')
         setFile('')
     }
 
-    const handleSmileSelect = (smile) => {
-        setMessage((prevState) => prevState + smile)
-    }
-
     return (
         <form className={styles.form} onSubmit={handleAddMessage}>
-            <MessageInput value={message} onChange={(e) => setMessage(e.target.value)}/>   
+            <MessageInput value={message} setMessage={setMessage}/>   
             <div className={styles.actions}>
-               <AddFileInput value={file} onChange={(e) => setFile(e.target.value)}/>
-               <AddSmile onSmileSelect={handleSmileSelect}/>
+               <AddFileInput setFile={setFile}/>
+               <AddSmile onSmileSelect={(smile) => setMessage(message + smile)}/>
             </div>
 
             <button className={styles.btn}></button>

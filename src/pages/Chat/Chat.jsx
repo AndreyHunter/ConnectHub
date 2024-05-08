@@ -4,10 +4,10 @@ import AddMessageForm from '../../components/Add-message-form/Add-message-form'
 
 import styles from './Chat.module.scss'
 
-const Chat = ({state, addMessage}) => {
+const Chat = ({state, dispatch}) => {
     return (
         <div className={styles.wrapper}>
-            <Messages state={state}/>
+            <Messages users={state.users}/>
             
             <section className={styles.chat}>
                 <ul className={styles.chat_messages}>
@@ -19,7 +19,7 @@ const Chat = ({state, addMessage}) => {
                         />
                     ))}
                 </ul>
-                <AddMessageForm addMessage={addMessage}/>
+                <AddMessageForm dispatch={dispatch}/>
             </section>
         </div>  
     )
