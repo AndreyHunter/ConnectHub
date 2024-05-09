@@ -1,13 +1,13 @@
-import UserLogo from './../../ui/User-logo/User-logo'
-import logoImage from './../../assets/images/user-image.jpg'
-import styles from './User.module.scss'
+import UserLogo from './../../ui/User-logo/User-logo';
+import logoImage from './../../assets/images/user-image.jpg';
+import styles from './User.module.scss';
 
 const User = () => {
     return (
         <div className={styles.user}>
-            <UserLogo image={logoImage}/>
+            <UserLogo image={logoImage} />
             <div>
-                <a href='#!' className={styles.title}>
+                <a href="#!" className={styles.title}>
                     Dmitry K.
                 </a>
                 <ul className={styles.list}>
@@ -18,7 +18,7 @@ const User = () => {
                 </ul>
             </div>
         </div>
-    )   
-}
+    );
+};
 
-export default User
+export default User;

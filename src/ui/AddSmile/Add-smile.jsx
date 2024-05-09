@@ -1,20 +1,20 @@
-import { FaRegSmile } from "react-icons/fa";
-import smiles from './smiles'
+import { FaRegSmile } from 'react-icons/fa';
+import smiles from './smiles';
 
-import styles from './Add-smile.module.scss'
-import { useState, useEffect, useRef } from 'react'
+import styles from './Add-smile.module.scss';
+import { useState, useEffect, useRef } from 'react';
 
-const AddSmile = ({onSmileSelect}) => {
-    const [showSmiles, setShowSmiles] = useState(false)
-    const smileRef = useRef(null)
+const AddSmile = ({ onSmileSelect }) => {
+    const [showSmiles, setShowSmiles] = useState(false);
+    const smileRef = useRef(null);
 
     const setSmile = () => {
-        setShowSmiles(!showSmiles)
-    }
+        setShowSmiles(!showSmiles);
+    };
 
     const handleSmileSelect = (smile) => {
-        onSmileSelect(smile)
-    }
+        onSmileSelect(smile);
+    };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -23,31 +23,31 @@ const AddSmile = ({onSmileSelect}) => {
             }
         };
 
-        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener('mousedown', handleClickOutside);
         return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [])
+    }, []);
 
     return (
-       <div className={styles.wrapper}>
+        <div className={styles.wrapper}>
             <button type="button" className={styles.smileBtn} onClick={setSmile}>
-                <FaRegSmile/>
+                <FaRegSmile />
             </button>
-            {showSmiles &&
+            {showSmiles && (
                 <ul className={styles.list} ref={smileRef}>
                     {smiles.map((smile, index) => (
-                        <span 
-                            key={index} 
-                            onClick={() => handleSmileSelect(smile)} 
+                        <span
+                            key={index}
+                            onClick={() => handleSmileSelect(smile)}
                             className={styles.smile}>
                             {smile}
                         </span>
                     ))}
                 </ul>
-            }
-       </div>
-    )
-}
+            )}
+        </div>
+    );
+};
 
-export default AddSmile
+export default AddSmile;

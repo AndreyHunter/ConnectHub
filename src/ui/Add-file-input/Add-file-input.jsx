@@ -1,22 +1,21 @@
-import { MdAttachFile } from "react-icons/md";
+import { MdAttachFile } from 'react-icons/md';
 
-import styles from './Add-file-input.module.scss'
+import styles from './Add-file-input.module.scss';
 
-const AddFileInput = ({setFile}) => {
+const AddFileInput = ({ setFile }) => {
     return (
         <div className={styles.wrapper}>
             <label htmlFor="fileInput" className={styles.fileIcon}>
-                <MdAttachFile/>
+                <MdAttachFile />
             </label>
             <input
                 onChange={(e) => setFile(e.target.value)}
-                type="file" 
-                id='fileInput'
+                type="file"
+                id="fileInput"
                 className={styles.fileInput}
             />
         </div>
-    )
+    );
+};
 
-}
-
-export default AddFileInput
+export default AddFileInput;

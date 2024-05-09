@@ -1,11 +1,11 @@
-import DialogItem from '../../ui/Dialog-item/Dialog-item'
+import DialogItem from '../../ui/Dialog-item/Dialog-item';
 
-import styles from './Messages.module.scss'
+import styles from './Messages.module.scss';
 
-const Messages = ({users}) => {
+const Messages = ({ users }) => {
     return (
         <ul className={styles.dialog_list}>
-            {users.map(user => (
+            {users.map((user) => (
                 <DialogItem
                     key={user.id}
                     id={user.id}
@@ -15,7 +15,7 @@ const Messages = ({users}) => {
                 />
             ))}
         </ul>
-    )
-}
+    );
+};
 
-export default Messages
+export default Messages;

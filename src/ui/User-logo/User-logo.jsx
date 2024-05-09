@@ -1,13 +1,13 @@
-import styles from './User-logo.module.scss'
+import styles from './User-logo.module.scss';
 
-const UserLogo = ({image}) => {
+const UserLogo = ({ image }) => {
     return (
         <div className={styles.logo}>
             <a href="#!">
-                <img src={image} alt="user-logo" className={styles.img}/>
+                <img src={image} alt="user-logo" className={styles.img} />
             </a>
         </div>
-    )
-}
+    );
+};
 
-export default UserLogo
+export default UserLogo;

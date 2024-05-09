@@ -1,5 +1,3 @@
-const ADD_POST = 'ADD-POST'
+const ADD_POST = 'ADD-POST';
 
-
-
-export const addPostAction = (postText) => ({type: ADD_POST, postText: postText})
+export const addPostAction = (postText) => ({ type: ADD_POST, postText: postText });

@@ -1,17 +1,17 @@
-import styles from './Post-input.module.scss'
+import styles from './Post-input.module.scss';
 
-const PostInput = ({setPostText, value}) => {
+const PostInput = ({ setPostText, value }) => {
     return (
         <div className={styles.wrapper}>
             <input
-            onChange={(e) => setPostText(e.target.value)}
-            value={value}
-            type="text" 
-            className={styles.input}
-            placeholder='your news...'
+                onChange={(e) => setPostText(e.target.value)}
+                value={value}
+                type="text"
+                className={styles.input}
+                placeholder="your news..."
             />
         </div>
-    )
-}
+    );
+};
 
-export default PostInput
+export default PostInput;

@@ -1,14 +1,14 @@
-import styles from './Message-input.module.scss'
+import styles from './Message-input.module.scss';
 
-const MessageInput = ({value, setMessage})  => {
+const MessageInput = ({ value, setMessage }) => {
     return (
-        <input 
+        <input
             onChange={(e) => setMessage(e.target.value)}
             value={value}
-            type="text" 
-            className={styles.input} 
+            type="text"
+            className={styles.input}
         />
-    )
-}
+    );
+};
 
-export default MessageInput
+export default MessageInput;
