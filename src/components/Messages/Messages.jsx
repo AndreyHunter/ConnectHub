@@ -2,16 +2,16 @@ import DialogItem from '../../ui/Dialog-item/Dialog-item';
 
 import styles from './Messages.module.scss';
 
-const Messages = ({ users }) => {
+const Messages = ({ dialogs }) => {
     return (
         <ul className={styles.dialog_list}>
-            {users.map((user) => (
+            {dialogs.map((dialog) => (
                 <DialogItem
-                    key={user.id}
-                    id={user.id}
-                    name={user.name}
-                    message={user.message}
-                    image={user.image}
+                    key={dialog.id}
+                    id={dialog.id}
+                    name={dialog.name}
+                    message={dialog.message}
+                    image={dialog.image}
                 />
             ))}
         </ul>

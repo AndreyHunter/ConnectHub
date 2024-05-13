@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import store from './store/redux';
+import { Provider, connect } from 'react-redux';
+
 import App from './App/App';
-import store from './store/store';
 
 import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const renderApp = () => {
-    root.render(
-        <Router>
-            <React.StrictMode>
-                <App state={store.getState()} dispatch={store.dispatch.bind(store)} />
-            </React.StrictMode>
-        </Router>,
-    );
-};
+const ConecctedApp = connect()(App);
 
-store.subscribe(renderApp);
-renderApp();
+root.render(
+    <Router>
+        <Provider store={store}>
+            <React.StrictMode>
+                <ConecctedApp />
+            </React.StrictMode>
+        </Provider>
+    </Router>,
+);

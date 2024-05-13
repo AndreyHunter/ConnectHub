@@ -1,0 +1,28 @@
+.btn {
+    width: 120px;
+    min-height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background-color: rgb(44, 44, 44);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: var(--main-transition);
+
+    &:hover {
+        background-color: rgb(25, 25, 25);
+    }
+    &:active {
+        outline: 1px solid rgb(247, 172, 24);
+    }
+}

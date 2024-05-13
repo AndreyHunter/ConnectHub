@@ -8,3 +8,19 @@ body {
     overflow-x: hidden;
     background-color: var(--main-bg);
 }
+
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}

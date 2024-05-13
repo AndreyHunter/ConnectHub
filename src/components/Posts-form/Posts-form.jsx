@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
-import { addPostAction } from './../../store/Actions/profile-actions';
+import { useState } from 'react';
 
 import PostButton from './../../ui/Buttons/Post-button/Post-button';
 import PostInput from './../../ui/Post-input/Post-input';
 
 import styles from './Posts-form.module.scss';
 
-const PostsForm = ({ dispatch }) => {
-    const [postText, setPostText] = useState('');
-
-    const addPostHandle = (e) => {
+const PostsForm = ({ addPost, setPostText, postText }) => {
+    const addPostHandler = (e) => {
         e.preventDefault();
         if (!postText) return;
-        dispatch(addPostAction(postText));
+        addPost(postText);
         setPostText('');
     };
 
     return (
-        <form className={styles.form} onSubmit={addPostHandle}>
+        <form className={styles.form} onSubmit={addPostHandler}>
             <PostInput value={postText} setPostText={setPostText} />
             <div className={styles.wraper}>
                 <PostButton />

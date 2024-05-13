@@ -3,7 +3,7 @@ import SharedButton from './../Buttons/Shared-button/Shared-button';
 
 import styles from './Post-item.module.scss';
 
-const PostItem = ({ message, image, likes, reposts }) => {
+const PostItem = ({ message, image, likes, reposts, deletePost, editPost, toggleLike }) => {
     return (
         <li className={styles.item}>
             <div className={styles.post}>
@@ -16,10 +16,16 @@ const PostItem = ({ message, image, likes, reposts }) => {
                     <div>Поделились: {reposts}</div>
                 </div>
                 <div className={styles.actions}>
-                    <Like />
+                    <Like toggleLike={toggleLike} />
                     <SharedButton />
                 </div>
             </div>
+            <button type="button" onClick={deletePost}>
+                УДАЛИТЬ ПОСТ
+            </button>
+            <button type="button" onClick={editPost}>
+                РЕДАКТИРОВАТЬ ПОСТ
+            </button>
         </li>
     );
 };

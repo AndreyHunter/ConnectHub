@@ -1,6 +1,6 @@
 import styles from './Post-input.module.scss';
 
-const PostInput = ({ setPostText, value }) => {
+const PostInput = ({ value, setPostText }) => {
     return (
         <div className={styles.wrapper}>
             <input

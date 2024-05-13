@@ -4,14 +4,22 @@ import AddMessageForm from '../../components/Add-message-form/Add-message-form';
 
 import styles from './Chat.module.scss';
 
-const Chat = ({ state, dispatch }) => {
+const Chat = ({
+    dialogs,
+    messages,
+    addMessage,
+    messageText,
+    filePath,
+    setMessageText,
+    setFilePath,
+}) => {
     return (
         <div className={styles.wrapper}>
-            <Messages users={state.users} />
+            <Messages dialogs={dialogs} />
 
             <section className={styles.chat}>
                 <ul className={styles.chat_messages}>
-                    {state.messages.map((message) => (
+                    {messages.map((message) => (
                         <UserMessage
                             key={message.id}
                             message={message.message}
@@ -19,7 +27,13 @@ const Chat = ({ state, dispatch }) => {
                         />
                     ))}
                 </ul>
-                <AddMessageForm dispatch={dispatch} />
+                <AddMessageForm
+                    addMessage={addMessage}
+                    messageText={messageText}
+                    filePath={filePath}
+                    setMessageText={setMessageText}
+                    setFilePath={setFilePath}
+                />
             </section>
         </div>
     );

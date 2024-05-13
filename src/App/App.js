@@ -1,32 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
+import routes from '../routes/routes';
 
 import Header from './../components/Header/Header';
-import SideBar from './../components/SideBar/SideBar';
+import SideBarContainer from '../components/SideBar/SideBarContainer';
 import Profile from './../pages/Profile/Profile';
-import Chat from './../pages/Chat/Chat';
+import ChatContainer from '../pages/Chat/ChatContainer';
 
 import './App.scss';
+import UsersContainer from '../pages/Users/UsersContainer';
 
-const App = ({ state, dispatch }) => {
+const App = () => {
     return (
         <div className="app">
             <Header />
 
             <div className="app-layout">
-                <SideBar friends={state.friends} />
+                <SideBarContainer />
                 <Routes>
-                    <Route
-                        path="/"
-                        element={<Profile state={state.profilePage} dispatch={dispatch} />}
-                    />
-                    <Route
-                        path="/profile"
-                        element={<Profile state={state.profilePage} dispatch={dispatch} />}
-                    />
-                    <Route
-                        path="/messages/*"
-                        element={<Chat state={state.messagesPage} dispatch={dispatch} />}
-                    />
+                    <Route path={routes.home} element={<Profile />} />
+                    <Route path={routes.profile} element={<Profile />} />
+                    <Route path={routes.messages} element={<ChatContainer />} />
+                    <Route path={routes.users} element={<UsersContainer />} />
                 </Routes>
             </div>
         </div>
