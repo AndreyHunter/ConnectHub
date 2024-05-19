@@ -1,12 +1,11 @@
-import routes from './../../routes/routes'
+import routes from './../../routes/routes';
 import { Link } from 'react-router-dom';
-
 
 import FollowButton from '../Buttons/FollowButton/FollowButton';
 
 import styles from './AvatarWithFollowButton.module.scss';
 
-const AvatarWithFollowButton = ({src, alt, id, userName, followHandler, isFollow }) => {
+const AvatarWithFollowButton = ({ src, alt, id, userName, followHandler, isFollow }) => {
     return (
         <div className={styles.avatar}>
             <Link to={`${routes.users}/${id}=${userName}`}>

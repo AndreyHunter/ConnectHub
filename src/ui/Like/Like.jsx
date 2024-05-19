@@ -1,6 +1,6 @@
 import styles from './Like.module.scss';
 
-const Like = ({toggleLike}) => {
+const Like = ({ toggleLike }) => {
     return (
         <div className={styles.like} onClick={toggleLike}>
             <img

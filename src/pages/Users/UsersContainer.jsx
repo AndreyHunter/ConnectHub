@@ -1,55 +1,94 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsersAc, toggleFollowAction } from '../../store/Reducers/users-reducer';
+import { Component } from 'react';
+import axios from 'axios';
+import { connect } from 'react-redux';
+import {
+    fetchUsersErrorAc,
+    fetchUsersStartAc,
+    fetchUsersSuccesAc,
+    setCurrentPageAction,
+    setPagesCountAction,
+    setTotalUsersCountAction,
+    toggleFollowAction,
+} from '../../store/users/users-actions';
+
 import Users from './Users';
 
-const UsersContainer = () => {
-    const dispatch = useDispatch();
-    const users = useSelector((state) => state.usersPage.users);
+const BASE_URL = 'http://localhost:3001/users';
 
-    if (!users.length) {
-        dispatch(fetchUsersAc([
-            {
-                id: 1,
-                avatar: 'https://dthezntil550i.cloudfront.net/kg/latest/kg1802132010216500004834729/1280_960/557d644f-12f3-49e1-bb66-23c16400540d.png',
-                name: 'Jacob',
-                location: {
-                    country: 'USA',
-                    city: 'Cansas',
-                },
-                status: 'I am looking for a job right now',
-                isFollow: false,
-            },
-            {
-                id: 2,
-                avatar: 'https://vesti42.ru/wp-content/uploads/2023/08/anime.jpg',
-                name: 'Marry',
-                location: {
-                    country: 'USA',
-                    city: 'New York',
-                },
-                status: 'I want to go with you',
-                isFollow: true,
-            },
-            {
-                id: 3,
-                avatar: 'https://i.pinimg.com/736x/e3/3c/52/e33c523872f9be335e8d6b6d8aca73f8.jpg',
-                name: 'Jane',
-                location: {
-                    country: 'Japan',
-                    city: 'Tokyo',
-                },
-                status: 'I like to walk',
-                isFollow: false,
-            },
-        ]))
+class UsersContainer extends Component {
+    componentDidMount = () => {
+        this.props.getUsers(this.props.currentPage, this.props.pageSize);
+    };
+
+    calcPagesCount = () => {
+        const pages = Math.ceil(this.props.usersLength / this.props.pageSize);
+
+        const pagesLength = [];
+
+        for (let i = 1; i <= pages; i++) {
+            pagesLength.push(i);
+        }
+
+        return pagesLength;
+    };
+
+    render() {
+        const { isLoading, error } = this.props;
+        const { users, followHandler, currentPage, pageSize, changePageHandler } = this.props;
+
+        return (
+            <Users
+                users={users}
+                followHandler={followHandler}
+                changePageHandler={changePageHandler}
+                currentPage={currentPage}
+                pagesLength={this.calcPagesCount()}
+                pageSize={pageSize}
+                isLoading={isLoading}
+                error={error}
+            />
+        );
     }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        users: state.usersPage.users,
+        usersLength: state.usersPage.usersLength,
+        pageSize: state.usersPage.pageSize,
+        currentPage: state.usersPage.currentPage,
+        // pages: state.usersPage.pages,
+        isLoading: state.usersPage.isLoading,
+        error: state.usersPage.error,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    const getUsers = async (page, perPage) => {
+        dispatch(fetchUsersStartAc());
+        try {
+            const res = await axios.get(`${BASE_URL}/?_page=${page}&_per_page=${perPage}`);
+            dispatch(fetchUsersSuccesAc(res.data.data));
+            dispatch(setTotalUsersCountAction(res.data.items));
+        } catch (error) {
+            dispatch(fetchUsersErrorAc('ERROR:', error));
+        }
+    };
+
+    const changePageHandler = (page, perPage) => {
+        dispatch(setCurrentPageAction(page));
+        getUsers(page, perPage);
+    };
 
     const followHandler = (id) => {
         dispatch(toggleFollowAction(id));
     };
 
-    return <Users users={users} followHandler={followHandler} />;
+    return {
+        getUsers: getUsers,
+        followHandler: followHandler,
+        changePageHandler: changePageHandler,
+    };
 };
 
-export default UsersContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);

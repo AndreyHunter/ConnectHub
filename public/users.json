@@ -1,0 +1,269 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "avatar": "https://dthezntil550i.cloudfront.net/kg/latest/kg1802132010216500004834729/1280_960/557d644f-12f3-49e1-bb66-23c16400540d.png",
+            "name": "Jacob",
+            "location": {
+                "country": "USA",
+                "city": "Kansas"
+            },
+            "status": "I am looking for a job right now",
+            "isFollow": false
+        },
+        {
+            "id": 2,
+            "avatar": "https://vesti42.ru/wp-content/uploads/2023/08/anime.jpg",
+            "name": "Marry",
+            "location": {
+                "country": "USA",
+                "city": "New York"
+            },
+            "status": "I want to go with you",
+            "isFollow": true
+        },
+        {
+            "id": 3,
+            "avatar": "https://i.pinimg.com/736x/e3/3c/52/e33c523872f9be335e8d6b6d8aca73f8.jpg",
+            "name": "Jane",
+            "location": {
+                "country": "Japan",
+                "city": "Tokyo"
+            },
+            "status": "I like to walk",
+            "isFollow": false,
+            "lastName": "Dole"
+        },
+        {
+            "id": 4,
+            "avatar": "https://static.displate.com/280x392/displate/2023-12-14/0e8bf99c32274f779851ee93b367ae8b_247fa401e8831ffd3eb34b159e2332f3.jpg",
+            "name": "Carly",
+            "location": {
+                "country": "England",
+                "city": "London"
+            },
+            "status": "I like to walk",
+            "isFollow": false
+        },
+        {
+            "id": 5,
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpD5dWZJv7-3QDtWqqrYIaj4hhV1YNNIeW7zlM8HdZYw&s",
+            "name": "Linda",
+            "location": {
+                "country": "France",
+                "city": "Paris"
+            },
+            "status": "I like to walk",
+            "isFollow": false
+        },
+        {
+            "id": 6,
+            "avatar": "https://img.freepik.com/premium-photo/anime-male-avatar_950633-956.jpg",
+            "name": "John",
+            "location": {
+                "country": "USA",
+                "city": "Los Angeles"
+            },
+            "status": "Love to code",
+            "isFollow": true
+        },
+        {
+            "id": 7,
+            "avatar": "https://static3.tgstat.ru/channels/_0/36/36bb6b64d3ac1fa36411e301e5b7c7ff.jpg",
+            "name": "Alice",
+            "location": {
+                "country": "Canada",
+                "city": "Toronto"
+            },
+            "status": "Enjoying the sun",
+            "isFollow": false
+        },
+        {
+            "id": 8,
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCOKKikRI7tZNmuHzg-zrBpWZU58CrkM7qRZR2mtpiTZHykfJmMgTb-yMZrJHmKXCiMww&usqp=CAU",
+            "name": "Bob",
+            "location": {
+                "country": "Australia",
+                "city": "Sydney"
+            },
+            "status": "Beach lover",
+            "isFollow": true
+        },
+        {
+            "id": 9,
+            "avatar": "https://i1.sndcdn.com/avatars-000317879260-4xyxxd-t500x500.jpg",
+            "name": "Eve",
+            "location": {
+                "country": "Brazil",
+                "city": "Rio de Janeiro"
+            },
+            "status": "Carnival time",
+            "isFollow": false
+        },
+        {
+            "id": 10,
+            "avatar": "https://i.pinimg.com/736x/0f/2a/08/0f2a08e70049a95a4193fb73b3d1972a.jpg",
+            "name": "Frank",
+            "location": {
+                "country": "Germany",
+                "city": "Berlin"
+            },
+            "status": "Tech enthusiast",
+            "isFollow": true
+        },
+        {
+            "id": 11,
+            "avatar": "https://a.storyblok.com/f/178900/200x201/1a5e6db121/3614810e9ada5235038e8deb4adc264c1447729591_large.jpg",
+            "name": "Grace",
+            "location": {
+                "country": "Italy",
+                "city": "Rome"
+            },
+            "status": "Loves pizza",
+            "isFollow": false
+        },
+        {
+            "id": 12,
+            "avatar": "https://i.pinimg.com/736x/a3/bb/b9/a3bbb908b303b9c3834b95273a2afcab.jpg",
+            "name": "Hank",
+            "location": {
+                "country": "Netherlands",
+                "city": "Amsterdam"
+            },
+            "status": "Rides a bike everywhere",
+            "isFollow": true
+        },
+        {
+            "id": 13,
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXykh4wjaBHFxKemduZJaYAvvSBUCXepI6VDog5uUg&s",
+            "name": "Ivy",
+            "location": {
+                "country": "Russia",
+                "city": "Moscow"
+            },
+            "status": "",
+            "isFollow": false
+        },
+        {
+            "id": 14,
+            "avatar": "https://pm1.aminoapps.com/6890/f553c26168eee84a193963f781585702683995f8r1-960-540v2_uhq.jpg",
+            "name": "Jack",
+            "location": {
+                "country": "South Korea",
+                "city": "Seoul"
+            },
+            "status": "K-pop fan",
+            "isFollow": true
+        },
+        {
+            "id": 15,
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDzfpSLZnwKg5i7oWELo9jvszLXOuZ0upvLRc5853Ts5tTOZ7HIO1C0lanL2-7WN6xSA&usqp=CAU",
+            "name": "Karen",
+            "location": {
+                "country": "Spain",
+                "city": "Madrid"
+            },
+            "status": "Loves tapas",
+            "isFollow": false
+        },
+        {
+            "id": 16,
+            "avatar": "https://media.comicbook.com/2020/10/noblesse-1240661.jpeg?auto=webp",
+            "name": "Leo",
+            "location": {
+                "country": "USA",
+                "city": "Chicago"
+            },
+            "status": "Deep dish pizza fan",
+            "isFollow": true
+        },
+        {
+            "id": 17,
+            "avatar": "https://great-wall-marathon.com/sites/default/files/styles/x_gallery/public/images/China_Zhangjiajie_Wulingyuan_CliffMountains_054_SS.jpg?itok=16iuDDvQ",
+            "name": "Mia",
+            "location": {
+                "country": "China",
+                "city": "Beijing"
+            },
+            "status": "Great Wall enthusiast",
+            "isFollow": false
+        },
+        {
+            "id": 18,
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6WGQdSUvZUP29NB0DlyQ3XeOPtAHWAx7WNo0wGUtm6TW6y8EF51mSxA3iY-IHId7jm4&usqp=CAU",
+            "name": "Nick",
+            "location": {
+                "country": "India",
+                "city": "Mumbai"
+            },
+            "status": "Bollywood lover",
+            "isFollow": true
+        },
+        {
+            "id": 19,
+            "avatar": "https://i.pinimg.com/736x/bc/7a/d1/bc7ad1c0b0831de535f069ff71eeec98.jpg",
+            "name": "Olivia",
+            "location": {
+                "country": "Egypt",
+                "city": "Cairo"
+            },
+            "status": "Pyramids admirer",
+            "isFollow": false
+        },
+        {
+            "id": 20,
+            "avatar": "https://ih1.redbubble.net/image.5278810690.9645/st,small,507x507-pad,600x600,f8f8f8.u4.jpg",
+            "name": "Paul",
+            "location": {
+                "country": "Mexico",
+                "city": "Mexico City"
+            },
+            "status": "Loves tacos",
+            "isFollow": true
+        },
+        {
+            "id": 21,
+            "avatar": "https://preview.redd.it/my-first-pint-v0-rwb1bo9xb1gc1.jpeg?auto=webp&s=2f2550aead8161e47cb05d7028a55af9c23e8471",
+            "name": "Quinn",
+            "location": {
+                "country": "Ireland",
+                "city": "Dublin"
+            },
+            "status": "Enjoys Guinness",
+            "isFollow": false
+        },
+        {
+            "id": 23,
+            "avatar": "https://c4.wallpaperflare.com/wallpaper/414/463/624/sci-fi-astronaut-wallpaper-preview.jpg",
+            "name": "Steve",
+            "location": {
+                "country": "USA",
+                "city": "Houston"
+            },
+            "status": "Enjoys space exploration",
+            "isFollow": false
+        },
+        {
+            "id": 24,
+            "avatar": "https://avatars.mds.yandex.net/get-games/1892995/2a00000187d9137375304190bba1909b12b7/orig",
+            "name": "Tracy",
+            "location": {
+                "country": "USA",
+                "city": "Miami"
+            },
+            "status": "Loves the beach",
+            "isFollow": true
+        },
+        {
+            "id": 25,
+            "avatar": "https://images-ng.pixai.art/images/orig/6b9af9d3-905c-4708-a690-bc3984510927",
+            "name": "Uma",
+            "location": {
+                "country": "Brazil",
+                "city": "Sao Paulo"
+            },
+            "status": "Enjoys football",
+            "isFollow": false
+        }
+    ]
+}

@@ -4,7 +4,7 @@ import {
     addMessageAction,
     setFilePathAction,
     setMessageTextAction,
-} from '../../store/Reducers/messages-reducer';
+} from '../../store/messages/messages-actions';
 
 const ChatContainer = () => {
     const dispatch = useDispatch();

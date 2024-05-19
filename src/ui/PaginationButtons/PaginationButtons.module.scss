@@ -1,0 +1,28 @@
+/* PaginationButtons.module.scss */
+.list {
+    display: flex;
+    gap: 5px;
+}
+
+.item {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item:hover {
+    background-color: #f0f0f0;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+    cursor: default;
+}
+
+.dots {
+    cursor: pointer;
+    user-select: none;
+}

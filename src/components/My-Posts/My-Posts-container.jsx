@@ -6,7 +6,7 @@ import {
     deletePostAction,
     editPostAction,
     setPostTextAction,
-} from '../../store/Reducers/profile-reducer';
+} from '../../store/profile/profile-actions';
 
 import MyPosts from './My-Posts';
 

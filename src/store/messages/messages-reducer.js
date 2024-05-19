@@ -1,6 +1,4 @@
-const ADD_MESSAGE = 'ADD-MESSAGE';
-const SET_MESSAGE_TEXT = 'SET-MESSAGE-TEXT';
-const SET_FILE_PATH = 'SET-FILE-PATH';
+import { ADD_MESSAGE, SET_MESSAGE_TEXT, SET_FILE_PATH } from './messages-actions';
 
 const initialState = {
     messages: [],
@@ -29,12 +27,3 @@ const messagesReducer = (state = initialState, action) => {
 };
 
 export default messagesReducer;
-
-export const addMessageAction = (message, filePath) => ({
-    type: ADD_MESSAGE,
-    message: message,
-    filePath: filePath,
-});
-
-export const setMessageTextAction = (message) => ({ type: SET_MESSAGE_TEXT, message: message });
-export const setFilePathAction = (filePath) => ({ type: SET_FILE_PATH, filePath: filePath });

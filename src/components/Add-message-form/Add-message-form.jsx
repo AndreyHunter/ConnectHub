@@ -5,13 +5,12 @@ import AddSmile from '../../ui/AddSmile/Add-smile';
 import styles from './Add-message-form.module.scss';
 
 const AddMessageForm = ({ addMessage, messageText, filePath, setMessageText, setFilePath }) => {
-
     const handleAddMessage = (e) => {
         e.preventDefault();
         if (!messageText) return;
         addMessage(messageText, filePath);
-        setMessageText('')
-        setFilePath('')
+        setMessageText('');
+        setFilePath('');
     };
 
     return (

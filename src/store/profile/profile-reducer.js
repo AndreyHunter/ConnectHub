@@ -1,8 +1,4 @@
-const ADD_POST = 'ADD-POST';
-const DELETE_POST = 'DELETE-POST';
-const EDIT_POST = 'EDIT-POST';
-const SET_POST_TEXT = 'SET-POST-TEXT';
-const TOGGLE_LIKE = 'ADD-LIKE';
+import { ADD_POST, DELETE_POST, EDIT_POST, SET_POST_TEXT, TOGGLE_LIKE } from './profile-actions';
 
 const initialState = {
     posts: [],
@@ -11,7 +7,7 @@ const initialState = {
 
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_POST:
+        case ADD_POST: {
             const post = {
                 id: performance.now(),
                 message: action.postText,
@@ -21,6 +17,7 @@ const profileReducer = (state = initialState, action) => {
                 reposts: 0,
             };
             return { ...state, posts: [...state.posts, post] };
+        }
         case DELETE_POST:
             return { ...state, posts: state.posts.filter((post) => post.id !== action.id) };
         case EDIT_POST:
@@ -37,9 +34,9 @@ const profileReducer = (state = initialState, action) => {
                 posts: state.posts.map((post) => {
                     if (post.id === action.id) {
                         if (post.isLiked) {
-                            return {...post, likes: post.likes - 1, isLiked: false}
+                            return { ...post, likes: post.likes - 1, isLiked: false };
                         }
-                        return {...post, likes: post.likes + 1, isLiked: true}
+                        return { ...post, likes: post.likes + 1, isLiked: true };
                     }
                     return post;
                 }),
@@ -54,9 +51,3 @@ const profileReducer = (state = initialState, action) => {
 };
 
 export default profileReducer;
-
-export const addPostAction = (postText) => ({ type: ADD_POST, postText: postText });
-export const deletePostAction = (id) => ({ type: DELETE_POST, id });
-export const editPostAction = (id, value) => ({ type: EDIT_POST, id, message: value });
-export const setPostTextAction = (text) => ({ type: SET_POST_TEXT, text: text });
-export const toggleLikeAction = (id) => ({ type: TOGGLE_LIKE, id: id });
