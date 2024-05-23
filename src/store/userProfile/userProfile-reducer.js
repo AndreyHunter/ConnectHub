@@ -1,4 +1,4 @@
-import { PROFILE_FETCH_START, PROFILE_FETCH_SUCCESS, PROFILE_FETCH_ERROR } from './profile-actions';
+import { USER_FETCH_START, USER_FETCH_SUCCESS, USER_FETCH_ERROR } from './userProfile-actions';
 
 const initialState = {
     profile: {},
@@ -6,17 +6,17 @@ const initialState = {
     error: null,
 };
 
-const profileReducer = (state = initialState, action) => {
+const userProfileReducer = (state = initialState, action) => {
     switch (action.type) {
-        case PROFILE_FETCH_START:
+        case USER_FETCH_START:
             return { ...state, isLoading: true };
-        case PROFILE_FETCH_SUCCESS:
+        case USER_FETCH_SUCCESS:
             return { ...state, isLoading: false, profile: action.payload };
-        case PROFILE_FETCH_ERROR:
+        case USER_FETCH_ERROR:
             return { ...state, isLoading: false, error: action.payload };
         default:
             return state;
     }
 };
 
-export default profileReducer;
+export default userProfileReducer;

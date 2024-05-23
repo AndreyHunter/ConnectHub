@@ -19,7 +19,7 @@ const UserCard = ({ user, followHandler }) => {
             />
             <div className={styles.info}>
                 <div className={styles.wrapper}>
-                    <Link to={`${routes.users}/${user.id}=${user.name}`} className={styles.name}>
+                    <Link to={`${routes.profile}/${user.id}`} className={styles.name}>
                         {user.name}
                     </Link>
                     <p className={styles.status}>

@@ -6,46 +6,23 @@ import {
     deletePostAction,
     editPostAction,
     setPostTextAction,
-} from '../../store/profile/profile-actions';
+} from '../../store/posts/posts-actions';
 
 import MyPosts from './My-Posts';
 
 const postsProps = (state) => {
     return {
-        posts: state.profilePage.posts,
-        postText: state.profilePage.postText,
+        posts: state.posts.posts,
+        postText: state.posts.postText,
     };
 };
 
-const callbacks = (dispatch) => {
-    const deletePost = (id) => {
-        dispatch(deletePostAction(id));
-    };
-
-    const editPost = (id, value) => {
-        if (!value) return;
-        dispatch(editPostAction(id, value));
-    };
-
-    const addPost = (text) => {
-        dispatch(addPostAction(text));
-    };
-
-    const toggleLike = (id) => dispatch(toggleLikeAction(id));
-
-    const setPostText = (text) => {
-        dispatch(setPostTextAction(text));
-    };
-
-    return {
-        addPost: addPost,
-        deletePost: deletePost,
-        editPost: editPost,
-        setPostText: setPostText,
-        toggleLike: toggleLike,
-    };
+const mapDispatchToProps = {
+    addPost: addPostAction,
+    deletePost: deletePostAction,
+    editPost: editPostAction,
+    setPostText: setPostTextAction,
+    toggleLike: toggleLikeAction,
 };
 
-const MyPostsContainer = connect(postsProps, callbacks)(MyPosts);
-
-export default MyPostsContainer;
+export default connect(postsProps, mapDispatchToProps)(MyPosts);

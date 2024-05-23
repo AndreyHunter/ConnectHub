@@ -4,6 +4,11 @@ import PostsForm from './../Posts-form/Posts-form';
 import styles from './My-Posts.module.scss';
 
 const MyPosts = ({ posts, addPost, deletePost, editPost, toggleLike, setPostText, postText }) => {
+    const editPostHandler = (id, value) => {
+        if (!value) return;
+        editPost(id, value);
+    };
+
     return (
         <div className={styles.posts}>
             <div className={styles.title}>My Posts</div>
@@ -20,7 +25,7 @@ const MyPosts = ({ posts, addPost, deletePost, editPost, toggleLike, setPostText
                             likes={post.likes}
                             reposts={post.reposts}
                             deletePost={() => deletePost(post.id)}
-                            editPost={() => editPost(post.id, prompt())}
+                            editPost={() => editPostHandler(post.id, prompt())}
                             toggleLike={() => toggleLike(post.id)}
                         />
                     ))}

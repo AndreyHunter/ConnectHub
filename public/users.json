@@ -233,7 +233,7 @@
             "isFollow": false
         },
         {
-            "id": 23,
+            "id": 22,
             "avatar": "https://c4.wallpaperflare.com/wallpaper/414/463/624/sci-fi-astronaut-wallpaper-preview.jpg",
             "name": "Steve",
             "location": {
@@ -244,7 +244,7 @@
             "isFollow": false
         },
         {
-            "id": 24,
+            "id": 23,
             "avatar": "https://avatars.mds.yandex.net/get-games/1892995/2a00000187d9137375304190bba1909b12b7/orig",
             "name": "Tracy",
             "location": {
@@ -255,7 +255,7 @@
             "isFollow": true
         },
         {
-            "id": 25,
+            "id": 24,
             "avatar": "https://images-ng.pixai.art/images/orig/6b9af9d3-905c-4708-a690-bc3984510927",
             "name": "Uma",
             "location": {
@@ -264,6 +264,464 @@
             },
             "status": "Enjoys football",
             "isFollow": false
+        }
+    ],
+    "profiles": [
+        {
+            "id": 1,
+            "fullName": "Jacob Sally",
+            "dateOfbirth": 2000,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "description",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/most_noch_tuman_123534_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+380744983423",
+                "email": "jacobSally86@gmail.com",
+                "youtube": "https:/jacobSally/youtube"
+            },
+            "photos": {
+                "small": "https://t4.ftcdn.net/jpg/02/23/50/73/360_F_223507349_F5RFU3kL6eMt5LijOaMbWLeHUTv165CB.jpg",
+                "large": "https://dthezntil550i.cloudfront.net/kg/latest/kg1802132010216500004834729/1280_960/557d644f-12f3-49e1-bb66-23c16400540d.png"
+            }
+        },
+        {
+            "id": 2,
+            "fullName": "Marry Johnson",
+            "dateOfbirth": 2003,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Currently employed",
+            "profileSettings": {
+                "profileBackground": "https://content.r9cdn.net/rimg/dimg/50/92/cd4e2dcb-city-31288-16561d77fbf.jpg?crop=true&width=1366&height=768&xhint=3359&yhint=1924"
+            },
+            "contacts": {
+                "phone": "+180944983444",
+                "email": "marryJ95@gmail.com",
+                "youtube": "https:/marryJ/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://vesti42.ru/wp-content/uploads/2023/08/anime.jpg"
+            }
+        },
+        {
+            "id": 3,
+            "fullName": "Jane Dole",
+            "dateOfbirth": 2000,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Looking for remote work",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/les_doroga_tuman_123519_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+811044983123",
+                "email": "janeDole88@gmail.com",
+                "youtube": "https:/janeDole/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://i.pinimg.com/736x/e3/3c/52/e33c523872f9be335e8d6b6d8aca73f8.jpg"
+            }
+        },
+        {
+            "id": 4,
+            "fullName": "Carly Smith",
+            "dateOfbirth": 2002,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Happy with my job",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/gory_oblaka_les_125967_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+441044983456",
+                "email": "carlySmith92@gmail.com",
+                "youtube": "https:/carlySmith/youtube"
+            },
+            "photos": {
+                "small": "https://static.displate.com/280x392/displate/2023-12-14/0e8bf99c32274f779851ee93b367ae8b_247fa401e8831ffd3eb34b159e2332f3.jpg",
+                "large": null
+            }
+        },
+        {
+            "id": 5,
+            "fullName": "Linda Bell",
+            "dateOfbirth": 1998,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Seeking new opportunities",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/gory_ozero_les_125849_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+331044983789",
+                "email": null,
+                "youtube": "https:/lindaBell/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpD5dWZJv7-3QDtWqqrYIaj4hhV1YNNIeW7zlM8HdZYw&s"
+            }
+        },
+        {
+            "id": 6,
+            "fullName": "John Doe",
+            "dateOfbirth": 1985,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Software engineer at XYZ",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/peyzazh_priroda_reka_123635_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+180944983123",
+                "email": "johnDoe85@gmail.com",
+                "youtube": "https:/johnDoe/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://img.freepik.com/premium-photo/anime-male-avatar_950633-956.jpg"
+            }
+        },
+        {
+            "id": 7,
+            "fullName": "Alice Brown",
+            "dateOfbirth": 1998,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Freelancer",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/doroga_zakat_pustynya_123615_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": null,
+                "email": "aliceBrown98@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://static3.tgstat.ru/channels/_0/36/36bb6b64d3ac1fa36411e301e5b7c7ff.jpg"
+            }
+        },
+        {
+            "id": 8,
+            "fullName": "Bob White",
+            "dateOfbirth": 1987,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Surfing instructor",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/volna_more_pesok_123601_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+612944983789",
+                "email": null,
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCOKKikRI7tZNmuHzg-zrBpWZU58CrkM7qRZR2mtpiTZHykfJmMgTb-yMZrJHmKXCiMww&usqp=CAU"
+            }
+        },
+        {
+            "id": 9,
+            "fullName": "Eve Green",
+            "dateOfbirth": 1991,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Event planner",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/vecher_gorod_ogni_123565_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+551144983456",
+                "email": "eveGreen91@gmail.com",
+                "youtube": "https:/eveGreen/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://i1.sndcdn.com/avatars-000317879260-4xyxxd-t500x500.jpg"
+            }
+        },
+        {
+            "id": 10,
+            "fullName": null,
+            "dateOfbirth": 1984,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": null,
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/gorod_noch_ogni_123557_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": null,
+                "email": "frankMiller84@gmail.com",
+                "youtube": "https:/frankMiller/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://i.pinimg.com/736x/0f/2a/08/0f2a08e70049a95a4193fb73b3d1972a.jpg"
+            }
+        },
+        {
+            "id": 11,
+            "fullName": "Grace Lee",
+            "dateOfbirth": 1993,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Culinary artist",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/pitstsa_eda_krug_123452_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+390444983789",
+                "email": "graceLee93@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://a.storyblok.com/f/178900/200x201/1a5e6db121/3614810e9ada5235038e8deb4adc264c1447729591_large.jpg"
+            }
+        },
+        {
+            "id": 12,
+            "fullName": "Hank Van Der",
+            "dateOfbirth": 1986,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Tour guide",
+            "profileSettings": {
+                "profileBackground": null
+            },
+            "contacts": {
+                "phone": "+311044983456",
+                "email": "hankVanDer86@gmail.com",
+                "youtube": "https:/hankVanDer/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://i.pinimg.com/736x/a3/bb/b9/a3bbb908b303b9c3834b95273a2afcab.jpg"
+            }
+        },
+        {
+            "id": 13,
+            "fullName": "Ivy Petrov",
+            "dateOfbirth": null,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Looking for a tech job",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/krasnaya_ploshchad_kreml_rossiya_123402_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+749544983123",
+                "email": "ivyPetrov97@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXykh4wjaBHFxKemduZJaYAvvSBUCXepI6VDog5uUg&s"
+            }
+        },
+        {
+            "id": 14,
+            "fullName": "Jack Kim",
+            "dateOfbirth": 1994,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Music producer",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/seul_ogni_gorod_123447_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": null,
+                "email": "jackKim94@gmail.com",
+                "youtube": "https:/jackKim/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://pm1.aminoapps.com/6890/f553c26168eee84a193963f781585702683995f8r1-960-540v2_uhq.jpg"
+            }
+        },
+        {
+            "id": 15,
+            "fullName": "Karen Garcia",
+            "dateOfbirth": 1989,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Food critic",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/arkhitektura_gorod_vid_123426_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+349144983654",
+                "email": "karenGarcia89@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDzfpSLZnwKg5i7oWELo9jvszLXOuZ0upvLRc5853Ts5tTOZ7HIO1C0lanL2-7WN6xSA&usqp=CAU"
+            }
+        },
+        {
+            "id": 16,
+            "fullName": "Leo Clark",
+            "dateOfbirth": 1990,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Software engineer",
+            "profileSettings": {
+                "profileBackground": "https://www.allrecipes.com/thmb/0xH8n2D4cC97t7mcC7eT2SDZ0aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_2x1_1725-fdaa76496da045b3bdaadcec6d4c5398.jpg"
+            },
+            "contacts": {
+                "phone": "+131244983654",
+                "email": null,
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://media.comicbook.com/2020/10/noblesse-1240661.jpeg?auto=webp"
+            }
+        },
+        {
+            "id": 17,
+            "fullName": "Mia Chen",
+            "dateOfbirth": 1992,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Tour guide",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/kitaj_gorod_gory_123401_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+861344983456",
+                "email": "miaChen92@gmail.com",
+                "youtube": "https:/miaChen/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://great-wall-marathon.com/sites/default/files/styles/x_gallery/public/images/China_Zhangjiajie_Wulingyuan_CliffMountains_054_SS.jpg?itok=16iuDDvQ"
+            }
+        },
+        {
+            "id": 18,
+            "fullName": "Nick Patel",
+            "dateOfbirth": 1995,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Film critic",
+            "profileSettings": {
+                "profileBackground": "https://imagedelivery.net/0LMYosKeo5o-LXOCjdKUuA/tourscanner.com/2022/07/fun-and-unusual-things-to-do-in-Mumbai.jpg/w=1200"
+            },
+            "contacts": {
+                "phone": "+912244983123",
+                "email": "nickPatel85@gmail.com",
+                "youtube": "https:/nickPatel/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6WGQdSUvZUP29NB0DlyQ3XeOPtAHWAx7WNo0wGUtm6TW6y8EF51mSxA3iY-IHId7jm4&usqp=CAU"
+            }
+        },
+        {
+            "id": 19,
+            "fullName": null,
+            "dateOfbirth": 1994,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Historian",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/piramidy_pesok_egipet_123356_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+201144983123",
+                "email": "oliviaAhmed94@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": "https://example.com/small19.jpg",
+                "large": "https://i.pinimg.com/736x/bc/7a/d1/bc7ad1c0b0831de535f069ff71eeec98.jpg"
+            }
+        },
+        {
+            "id": 20,
+            "fullName": "Paul Gonzalez",
+            "dateOfbirth": 1990,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Chef",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/meksika_gorod_doma_123354_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+525544983123",
+                "email": "paulGonzalez90@gmail.com",
+                "youtube": "https:/paulGonzalez/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://ih1.redbubble.net/image.5278810690.9645/st,small,507x507-pad,600x600,f8f8f8.u4.jpg"
+            }
+        },
+        {
+            "id": 21,
+            "fullName": "Quinn O'Reilly",
+            "dateOfbirth": 1987,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Brewery tour guide",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/dublin_ireland_city_123456_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+353144983123",
+                "email": "quinnOreilly87@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": "https://preview.redd.it/my-first-pint-v0-rwb1bo9xb1gc1.jpeg?auto=webp&s=2f2550aead8161e47cb05d7028a55af9c23e8471",
+                "large": null
+            }
+        },
+        {
+            "id": 22,
+            "fullName": "Steve Rogers",
+            "dateOfbirth": 1982,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Aerospace engineer",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/kosmos_zvezdy_planety_123456_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+171344983123",
+                "email": "steveRogers82@gmail.com",
+                "youtube": "https:/steveRogers/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://c4.wallpaperflare.com/wallpaper/414/463/624/sci-fi-astronaut-wallpaper-preview.jpg"
+            }
+        },
+        {
+            "id": 23,
+            "fullName": "Tracy Morgan",
+            "dateOfbirth": 1995,
+            "lookingForAJob": true,
+            "lokingForAJobDescription": "Lifeguard",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/plyazh_more_pesok_123456_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+130544983123",
+                "email": "tracyMorgan95@gmail.com",
+                "youtube": "https:/tracyMorgan/youtube"
+            },
+            "photos": {
+                "small": null,
+                "large": "https://avatars.mds.yandex.net/get-games/1892995/2a00000187d9137375304190bba1909b12b7/orig"
+            }
+        },
+        {
+            "id": 24,
+            "fullName": "Uma Silva",
+            "dateOfbirth": 1998,
+            "lookingForAJob": false,
+            "lokingForAJobDescription": "Football coach",
+            "profileSettings": {
+                "profileBackground": "https://images.wallpaperscraft.ru/image/single/futbol_stadion_pole_123456_2560x1440.jpg"
+            },
+            "contacts": {
+                "phone": "+551144983123",
+                "email": "umaSilva93@gmail.com",
+                "youtube": null
+            },
+            "photos": {
+                "small": null,
+                "large": "https://images-ng.pixai.art/images/orig/6b9af9d3-905c-4708-a690-bc3984510927"
+            }
         }
     ]
 }

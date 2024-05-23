@@ -3,7 +3,8 @@ import routes from '../routes/routes';
 
 import Header from './../components/Header/Header';
 import SideBarContainer from '../components/SideBar/SideBarContainer';
-import Profile from './../pages/Profile/Profile';
+import ProfileContainer from './../pages/Profile/ProfileContainer';
+import UserProfileContainer from '../pages/UserProfile/UserProfileContainer';
 import ChatContainer from '../pages/Chat/ChatContainer';
 
 import './App.scss';
@@ -16,8 +17,9 @@ const App = () => {
             <div className="app-layout">
                 <SideBarContainer />
                 <Routes>
-                    <Route path={routes.home} element={<Profile />} />
-                    <Route path={routes.profile} element={<Profile />} />
+                    <Route path={routes.home} element={<ProfileContainer />} />
+                    <Route path={routes.profile} element={<ProfileContainer />} />
+                    <Route path={routes.userProfile} element={<UserProfileContainer />} />
                     <Route path={routes.messages} element={<ChatContainer />} />
                     <Route path={routes.users} element={<UsersContainer />} />
                 </Routes>

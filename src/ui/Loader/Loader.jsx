@@ -1,4 +1,4 @@
-import loader from '../../assets/oval.svg';
+import loader from '../../assets/images/oval.svg';
 
 import styles from './Loader.module.scss';
 

@@ -1,19 +1,10 @@
 import UserCard from '../../components/UserCard/UserCard';
-import PaginationButtons from '../../ui/PaginationButtons/PaginationButtons';
+import PaginationContainer from '../../components/Pagination/PaginationContainer';
 import PreLoader from '../../ui/CustomLoader/CustomLoader';
 
 import styles from './Users.module.scss';
 
-const Users = ({
-    users,
-    followHandler,
-    changePageHandler,
-    pagesLength,
-    currentPage,
-    pageSize,
-    isLoading,
-    error,
-}) => {
+const Users = ({ users, followHandler, isLoading, error }) => {
     return (
         <section>
             <h2 className={styles.title}>Users</h2>
@@ -39,12 +30,7 @@ const Users = ({
                 )}
             </section>
 
-            <PaginationButtons
-                pages={pagesLength}
-                currentPage={currentPage}
-                pageSize={pageSize}
-                changePageHandler={changePageHandler}
-            />
+            <PaginationContainer />
         </section>
     );
 };

@@ -5,10 +5,10 @@ import FollowButton from '../Buttons/FollowButton/FollowButton';
 
 import styles from './AvatarWithFollowButton.module.scss';
 
-const AvatarWithFollowButton = ({ src, alt, id, userName, followHandler, isFollow }) => {
+const AvatarWithFollowButton = ({ src, alt, id, followHandler, isFollow }) => {
     return (
         <div className={styles.avatar}>
-            <Link to={`${routes.users}/${id}=${userName}`}>
+            <Link to={`${routes.userProfile}${id}`}>
                 <img src={src} alt={alt} />
             </Link>
             <FollowButton callback={followHandler} isFollow={isFollow} />

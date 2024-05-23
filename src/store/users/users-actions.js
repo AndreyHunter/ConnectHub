@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+const BASE_URL = 'http://localhost:3001/users';
+
 export const FETCH_USERS_START = 'FETCH-USERS-START';
 export const FETCH_USERS_ERROR = 'FETCH-USERS-ERROR';
 export const FETCH_USERS_SUCCESS = 'FETCH-USERS-SUCCESS';
@@ -19,7 +23,7 @@ export const fetchUsersErrorAc = (error) => {
     return { type: FETCH_USERS_ERROR, payload: error };
 };
 
-export const toggleFollowAction = (id) => {
+export const toggleFollowAc = (id) => {
     return { type: TOGGLE_FOLLOW, id: id };
 };
 
@@ -33,4 +37,18 @@ export const setTotalUsersCountAction = (usersLength) => {
 
 export const setPagesCountAction = (pages) => {
     return { type: SET_PAGES_COUNT, payload: pages };
+};
+
+export const getUsers = (page, perPage) => {
+    return async (dispatch) => {
+        dispatch(fetchUsersStartAc());
+        try {
+            const res = await axios.get(`${BASE_URL}/?_page=${page}&_per_page=${perPage}`);
+            dispatch(fetchUsersSuccesAc(res.data.data));
+            dispatch(setPagesCountAction(res.data.pages));
+            dispatch(setCurrentPageAction(page));
+        } catch (error) {
+            dispatch(fetchUsersErrorAc('ERROR:', error));
+        }
+    };
 };
