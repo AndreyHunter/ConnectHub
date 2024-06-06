@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/AndreyHunter/ConnectHub/static/css/main.c06a914e.css",
+    "main.js": "/AndreyHunter/ConnectHub/static/js/main.44aa5fe7.js",
+    "static/media/defaultProfileBag.jpg": "/AndreyHunter/ConnectHub/static/media/defaultProfileBag.78ff0a91d659260502e9.jpg",
+    "static/media/user-image.jpg": "/AndreyHunter/ConnectHub/static/media/user-image.d87a7e1e20b42eb7493b.jpg",
+    "index.html": "/AndreyHunter/ConnectHub/index.html",
+    "static/media/logo.svg": "/AndreyHunter/ConnectHub/static/media/logo.93c787b8d6c1c2463f647ccdac4435cd.svg",
+    "static/media/oval.svg": "/AndreyHunter/ConnectHub/static/media/oval.ce7184a8baed828dcf46c7e88e16e3e3.svg",
+    "main.c06a914e.css.map": "/AndreyHunter/ConnectHub/static/css/main.c06a914e.css.map",
+    "main.44aa5fe7.js.map": "/AndreyHunter/ConnectHub/static/js/main.44aa5fe7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c06a914e.css",
+    "static/js/main.44aa5fe7.js"
+  ]
+}
