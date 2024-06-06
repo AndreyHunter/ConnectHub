@@ -5,7 +5,9 @@ import PostInput from './../../ui/Post-input/Post-input';
 
 import styles from './Posts-form.module.scss';
 
-const PostsForm = ({ addPost, setPostText, postText }) => {
+const PostsForm = ({ addPost }) => {
+    const [postText, setPostText] = useState('');
+
     const addPostHandler = (e) => {
         e.preventDefault();
         if (!postText) return;
@@ -15,7 +17,7 @@ const PostsForm = ({ addPost, setPostText, postText }) => {
 
     return (
         <form className={styles.form} onSubmit={addPostHandler}>
-            <PostInput value={postText} setPostText={setPostText} />
+            <PostInput value={postText} onChange={setPostText} />
             <div className={styles.wraper}>
                 <PostButton />
             </div>

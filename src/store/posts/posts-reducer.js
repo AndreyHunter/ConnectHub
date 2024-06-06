@@ -2,7 +2,6 @@ import { ADD_POST, DELETE_POST, EDIT_POST, SET_POST_TEXT, TOGGLE_LIKE } from './
 
 const initialState = {
     posts: [],
-    postText: '',
 };
 
 const postsReducer = (state = initialState, action) => {
@@ -41,9 +40,6 @@ const postsReducer = (state = initialState, action) => {
                     return post;
                 }),
             };
-
-        case SET_POST_TEXT:
-            return { ...state, postText: action.text };
 
         default:
             return state;

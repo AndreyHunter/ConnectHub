@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const BASE_URL = 'http://localhost:3001/users';
+import { BASE_URL } from './../../api/api';
 
 export const FETCH_USERS_START = 'FETCH-USERS-START';
 export const FETCH_USERS_ERROR = 'FETCH-USERS-ERROR';
@@ -43,7 +42,7 @@ export const getUsers = (page, perPage) => {
     return async (dispatch) => {
         dispatch(fetchUsersStartAc());
         try {
-            const res = await axios.get(`${BASE_URL}/?_page=${page}&_per_page=${perPage}`);
+            const res = await axios.get(`${BASE_URL}/users/?_page=${page}&_per_page=${perPage}`);
             dispatch(fetchUsersSuccesAc(res.data.data));
             dispatch(setPagesCountAction(res.data.pages));
             dispatch(setCurrentPageAction(page));

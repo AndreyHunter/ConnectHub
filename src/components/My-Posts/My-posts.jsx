@@ -3,7 +3,8 @@ import PostsForm from './../Posts-form/Posts-form';
 
 import styles from './My-Posts.module.scss';
 
-const MyPosts = ({ posts, addPost, deletePost, editPost, toggleLike, setPostText, postText }) => {
+const MyPosts = ({ posts, addPost, deletePost, editPost, toggleLike }) => {
+
     const editPostHandler = (id, value) => {
         if (!value) return;
         editPost(id, value);
@@ -13,7 +14,7 @@ const MyPosts = ({ posts, addPost, deletePost, editPost, toggleLike, setPostText
         <div className={styles.posts}>
             <div className={styles.title}>My Posts</div>
 
-            <PostsForm addPost={addPost} setPostText={setPostText} postText={postText} />
+            <PostsForm addPost={addPost}/>
 
             <div className={styles.list_wrapper}>
                 <ul className={styles.list}>

@@ -1,7 +1,7 @@
 import { PROFILE_FETCH_START, PROFILE_FETCH_SUCCESS, PROFILE_FETCH_ERROR } from './profile-actions';
 
 const initialState = {
-    profile: {},
+    profile: null,
     isLoading: false,
     error: null,
 };

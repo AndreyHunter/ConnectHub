@@ -46,12 +46,12 @@ const SideBar = ({ friends }) => {
                 </div>
             </nav>
 
-            <section className={styles.friends}>
+            {/* <section className={styles.friends}>
                 <NavLink to={routes.friends}>
                     <span>Friends: {friends.length}</span>
                 </NavLink>
                 <FriendsWidjet friends={friends} />
-            </section>
+            </section> */}
         </aside>
     );
 };

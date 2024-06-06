@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const BASE_URL = 'http://localhost:3001';
+import { BASE_URL } from './../../api/api';
 
 export const USER_FETCH_START = 'USER_FETCHING_START';
 export const USER_FETCH_SUCCESS = 'USER_FETCH_SUCCESS';

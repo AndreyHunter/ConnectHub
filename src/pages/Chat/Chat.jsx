@@ -4,15 +4,7 @@ import AddMessageForm from '../../components/Add-message-form/Add-message-form';
 
 import styles from './Chat.module.scss';
 
-const Chat = ({
-    dialogs,
-    messages,
-    addMessage,
-    messageText,
-    filePath,
-    setMessageText,
-    setFilePath,
-}) => {
+const Chat = ({ dialogs, messages, addMessage }) => {
     return (
         <div className={styles.wrapper}>
             <Messages dialogs={dialogs} />
@@ -27,13 +19,7 @@ const Chat = ({
                         />
                     ))}
                 </ul>
-                <AddMessageForm
-                    addMessage={addMessage}
-                    messageText={messageText}
-                    filePath={filePath}
-                    setMessageText={setMessageText}
-                    setFilePath={setFilePath}
-                />
+                <AddMessageForm addMessage={addMessage} />
             </section>
         </div>
     );

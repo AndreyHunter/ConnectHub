@@ -1,11 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getProfileInfo } from '../../store/profile/profile-actions';
-import Profile from './Profile';
+import { ProfilePage } from './ProfilePage';
 
-const ProfileContainer = () => {
+const ProfilePageContainer = () => {
     const profile = useSelector((state) => state.profile.profile);
-    const isLoading = useSelector((state) => state.profile.isLoading);
     const dispatch = useDispatch();
 
     const myProfileId = 1;
@@ -14,7 +13,7 @@ const ProfileContainer = () => {
         dispatch(getProfileInfo(myProfileId));
     }, [dispatch]);
 
-    return <Profile profile={profile} isLoading={isLoading}/>;
+    return <ProfilePage profile={profile} />;
 };
 
-export default ProfileContainer;
+export { ProfilePageContainer };

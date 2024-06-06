@@ -1,8 +1,13 @@
-.user {
+.profile {
     padding: 10px;
     display: flex;
     gap: 30px;
     background-color: rgb(235, 235, 235);
+}
+
+.info {
+    display: flex;
+    gap: 30px;
 }
 
 .title {
@@ -17,7 +22,3 @@
     gap: 5px;
 }
 
-.info {
-    display: flex;
-    gap: 30px;
-}

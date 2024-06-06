@@ -312,7 +312,7 @@
             "lookingForAJob": true,
             "lokingForAJobDescription": "Looking for remote work",
             "profileSettings": {
-                "profileBackground": "https://images.wallpaperscraft.ru/image/single/les_doroga_tuman_123519_2560x1440.jpg"
+                "profileBackground": "https://content.r9cdn.net/rimg/dimg/ea/d1/34822ae1-city-21033-1647f45cd43.jpg?width=1366&height=768&xhint=1518&yhint=1265&crop=true"
             },
             "contacts": {
                 "phone": "+811044983123",
@@ -586,7 +586,7 @@
                 "youtube": "https:/miaChen/youtube"
             },
             "photos": {
-                "small": null,
+                "small": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NtpozYXjNLyA5pmib-BjhPwZiBK_3IFJA6cpeRqAyawMjR96JmlIZ13_MAD0xRJ6XHg&usqp=CAU",
                 "large": "https://great-wall-marathon.com/sites/default/files/styles/x_gallery/public/images/China_Zhangjiajie_Wulingyuan_CliffMountains_054_SS.jpg?itok=16iuDDvQ"
             }
         },
@@ -624,8 +624,8 @@
                 "youtube": null
             },
             "photos": {
-                "small": "https://example.com/small19.jpg",
-                "large": "https://i.pinimg.com/736x/bc/7a/d1/bc7ad1c0b0831de535f069ff71eeec98.jpg"
+                "small": "https://i.pinimg.com/736x/bc/7a/d1/bc7ad1c0b0831de535f069ff71eeec98.jpg",
+                "large": null
             }
         },
         {
